@@ -2,8 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FormattedMessage, useIntl } from "react-intl";
-import Section from "../../components/Section";
-import Nav from "../../components/Nav";
+import Mapping from "../../../components/Mapping";
+import Nav from "../../../components/Nav";
 
 export default function Home({ dir }) {
   const { locales } = useRouter();
@@ -34,7 +34,7 @@ export default function Home({ dir }) {
       <main className="text-2xl">
         <Nav />
         <div className="text-4xl my-10 mx-auto text-center">
-          <Section />
+          <Mapping />
         </div>
       </main>
     </>
